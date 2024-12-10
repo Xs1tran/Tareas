@@ -4,46 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Tareas.css">
-    <script src="Tareas.js" defer></script>
+    <link rel="stylesheet" href="Tareas1.css">
 </head>
-<header>
-    <h1>¡LISTA DE TAREAS!</h1>
-</header>
 <body>
+    <H1>¡LISTA DE TAREAS!</H1>
+    <input type="text" id="asignacion">
+    <button id="agregar">add</button>
 
-    <div>
-        <label for="nombresInput">Nombres: </label>
-        <input type="text" id="nombresInput" name="nombresInput" >
-        <br>
-        <label for="apellidosInput">Apellidos: </label>
-        <input type="text" id="apellidosInput" name="apellidosInput" >
-        <br>
-        <label for="identificacionInput">Identificación: </label>
-        <input type="text" id="identificacionInput" name="identificacionInput" >
-        <br>
+    <ul id="Lista"></ul>
 
-        <button type="submit" onclick="submitForm()">OK</button>
-        <button type="reset">X</button>
-    </div>
+ 
 
-    <br>
-
-    <div class="userTable">
-        <table>
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Nombres</th>
-                    <th>Apellidos</th>
-                    <th>Identificación</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-    </div>
-
+    <script src="Tareas.js"></script>
 </body>
 </html>
