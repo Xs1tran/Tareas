@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Tareas.css">
+    <script src="Tareas.js" defer></script>
+</head>
+<header>
+    <h1>¡LISTA DE USUARIOS!</h1>
+</header>
+<body>
+    
+    <div>
+        <label for="nombresInput">Nombres: </label>
+        <input type="text" id="nombresInput" name="nombresInput" >
+        <br>
+        <label for="apellidosInput">Apellidos: </label>
+        <input type="text" id="apellidosInput" name="apellidosInput" >
+        <br>
+        <label for="identificacionInput">Identificación: </label>
+        <input type="text" id="identificacionInput" name="identificacionInput" >
+        <br>
+
+        <button type="submit" onclick="submitForm()">OK</button>
+    </div>
+
+    <br>
+
+    <div class="userTable">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Identificación</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div id="modal" class="modal">
+        <div class="contentM">
+            <span class="close">&times;</span>
+            <h3 id="titleM"></h3>
+            <form id="formM">
+                <label for="nombresM">Nombres:</label>
+                <input type="text" id="nombresM" name="nombres">
+                <br>
+                <label for="apellidosM">Apellidos:</label>
+                <input type="text" id="apellidosM" name="apellidos">
+                <br>
+                <label for="identificacionM">identificacion:</label>
+                <input type="text" id="identificacionM" name="identificacion">
+                <br>
+                <button type="button" id="saveBtn">Guardar</button>
+            </form>
+        </div>
+    </div>
+    
+
+</body>
+</html>
